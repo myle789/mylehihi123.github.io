@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Fira+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto+Serif:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common css */
+
+.text-center {
+  text-align: center;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* để các phần tử con lên trên 1 hàng ngang bằng thuôc */
+.row {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  filter: sepia(1) !important;
+}
+/* header */
+
+header {
+  margin-top: 1rem;
+}
+/* div bọc icon logo */
+.header-logo {
+  display: flex;
+  transition: all 0.3s linear;
+  height: 65px;
+  justify-content: center;
+}
+
+.header-logo.fixed-nav {
+  transition: all 0.4s linear;
+  height: 0;
+}
+
+.header-logo a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+/*  ảnh logo  */
+.header-logo img {
+  width: 20%;
+  object-fit: contain;
+  height: 100%;
+}
+
+/* nav bọc menu + icon */
+
+.nav-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav-main.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 20px;
+  width: 100%;
+  transition: all 0.4s linear;
+  height: 71px;
+  background: white;
+  display: flex;
+  margin: 0;
+  z-index: 100;
+  align-items: center;
+  box-shadow: 0px 3px 5px #f4f4f4;
+}
+
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-main.fixed nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* các đường link trên thanh nav */
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 650;
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  position: relative;
+}
+/* Hover link trên thanh menu */
+nav a::after {
+  content: "";
+  background: #000;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  transition: all 0.3s linear;
+}
+
+nav a:hover::after {
+  width: 100% !important;
+}
+
+/* bọc menu-muti sản phẩm */
+
+.menu-muti-level {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* ul và li trong menu-muti*/
+
+.menu-muti-level ul {
+  padding: 1rem 0;
+  list-style: none;
+  min-width: 300px;
+  border: 1px solid #777;
+}
+
+.menu-muti-level li {
+  padding: 0.5rem 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 1rem;
+}
+/* hover menu-muti */
+nav a:hover .menu-muti-level {
+  display: block !important;
+}
+
+/* icon header*/
+.icon-header i {
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+/* icon giỏ hàng*/
+.bx-cart {
+  margin-right: 10px;
+}
+/* hover icon giỏ hàng*/
+.bx-cart:hover .cart-contain {
+  display: block !important;
+}
+
+.cart-contain {
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 125%;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  text-align: center;
+  min-width: 500px;
+  box-shadow: 1px 1px 5px #666;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.cart-contain-head {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.cart-contain-head i {
+  font-size: 22px;
+}
+
+.cart-contain-head h3 {
+  flex: 1;
+}
+
+.cart-contain-body h4 {
+  font-weight: 500;
+}
+
+.cart-contain-body {
+  padding-top: 1rem;
+}
+
+/* hover icon tìm kiếm*/
+.bx-search:hover .search-contain {
+  display: block !important;
+}
+
+.search-contain {
+  position: absolute;
+  top: 150%;
+  right: 0;
+  display: none;
+}
+
+.search-contain div {
+  display: flex;
+  border: 1px solid rgb(204, 203, 203);
+}
+
+.search-contain button {
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+.search-contain button:hover {
+  background: coral;
+  color: #fff;
+}
+
+.search-contain input {
+  border: none;
+  outline: line;
+  padding: 10px 20px;
+}
+
+.search-contain input:focus {
+  outline: none;
+}
+
+/* Body website*/
+/* bọc toàn bộ body*/
+.main-body {
+  margin-top: 3rem;
+}
+/* banner*/
+.banner {
+  margin-bottom: 5rem;
+}
+
+/* 4 lựa chọn */
+
+.produce-product {
+  margin-bottom: 5rem;
+}
+
+.produce-product .card {
+  margin-right: 25px;
+}
+
+.produce-product .card:last-child {
+  margin-right: 0;
+}
+
+/* hover toàn bộ hình có class .card*/
+.card img:hover {
+  opacity: 0.7;
+}
+
+/* Bọc Sản phẩm được yêu thích*/
+.love-product {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* tiêu đề*/
+.love-product h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 300px;
+  font-weight: 700;
+}
+/* Ảnh yêu thích*/
+.card-love img {
+  width: 267px;
+  height: 267px;
+  object-fit: cover;
+  margin: auto;
+}
+
+/* bọc nội dung*/
+.card-love .infomation {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.card-love .infomation h4 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-love .infomation p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+/*  button */
+.card-love button,
+.card-love a,
+.gallerry-bottom button,
+.details button,
+.quick-view-btn {
+  height: 35px;
+  text-decoration: none;
+  width: 180px;
+  padding: 15px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 550;
+  outline: none;
+  background: #b5934a;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+/* hover button*/
+.card-love button:hover,
+.gallerry-bottom button:hover {
+  opacity: 0.6;
+}
+
+/* bọc khoảnh khắc yêu thích*/
+.gallerry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* tiêu đề*/
+.gallerry h2 {
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallerry-card {
+  margin-right: 15px;
+  width: calc(100% / 3);
+}
+/* hình ảnh*/
+.gallerry-card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+/* thẻ card cuối*/
+.gallerry-card:last-child {
+  margin-right: 0px;
+}
+.gallerry-bottom {
+  margin: 1rem 0;
+}
+/* gạch ngang*/
+hr {
+  margin-bottom: 3rem;
+  background: #999;
+}
+/* hình chuyển slide*/
+.slick-next:before {
+  position: relative;
+  top: -15px;
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1552126/right-carousel-arrow.png");
+}
+
+.slick-prev:before {
+  position: relative;
+  top: -15px;
+  right: 20px;
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1552126/left-carousel-arrow.png");
+}
+
+/* footer*/
+.footer {
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  background: #21120b;
+  color: white;
+  padding-bottom: 6rem;
+}
+
+.footer-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+/* footer hình*/
+.footer-img {
+  margin-bottom: 2rem;
+}
+
+.footer-img img {
+  width: 20%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+/* footer icon*/
+.footer-icon {
+  margin-bottom: 1.5rem;
+}
+
+.footer-icon i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+/* footer link*/
+.footer-link {
+  color: #cca652;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.footer-link ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 550px;
+}
+/* tại vì trong thẻ li có thẻ a nên css cho thẻ a luôn cx đc */
+.footer-link li a {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #cca652;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #cca652;
+}
+
+.footer-link-last {
+  border: none !important;
+}
+
+.footer-link li a:hover {
+  color: #fff;
+}
+
+/* footer cuối */
+.footer-info {
+  margin-bottom: 2rem;
+  color: #5f4a3b !important ;
+  font-size: 14px;
+}
+
+.footer-bottom img {
+  width: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.footer-bottom p {
+  color: #5f4a3b !important ;
+}
+/* reponsive dưới 1200px  */
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 1rem;
+  }
+  .footer {
+    margin: 0 -1rem;
+  }
+}

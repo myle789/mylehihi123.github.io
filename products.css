@@ -1,0 +1,155 @@
+/* css các sản phẩm  */
+.products {
+  margin-bottom: 5rem;
+}
+
+/* Tiêu đề "San Pham" */
+.products h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Bọc sản phẩm gần nhất*/
+.products-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+ 
+}
+
+/* Bọc 1 sản phẩm*/
+.products-row .col {
+  width: calc(100% / 3);
+  padding: 0 50px;
+}
+
+/* 1 sản phẩm */
+.products-card {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+/* % sale */
+.tag-sale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: #b5934a;
+}
+
+.tag-sale span:nth-child(1) {
+  font-size: 10px;
+}
+
+.tag-sale span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Ảnh sản phẩm*/
+.products-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgb(110, 95, 95);
+}
+
+.products-card img:hover {
+  opacity: 0.5;
+}
+/* Bọc thông tin sản phẩm */
+.products-card-info {
+  margin-top: 2rem;
+  text-align: center;
+ 
+}
+/* Tên sản phẩm */
+.products-card-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 7.5px;
+  font-weight: 550;
+}
+
+.products-card-name:hover {
+  color: #b5934a;
+}
+
+/* Giá sản phẩm */
+.products-card-price {
+  margin-bottom: 7.5px;
+}
+
+/* Bọc giá mới */
+.products-card-price .new-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+/* Bọc giá cũ */
+.products-card-price .old-price {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: line-through;
+  color: #898988;
+}
+
+/*  bọc Icon sao */
+.product-rating {
+  margin-bottom: 7.5px;
+}
+
+/* Icon */
+.product-rating i {
+  font-size: 16px;
+  color: #af955c;
+}
+/* số 5 */
+.product-rating span {
+  font-size: 12px;
+  color: #af955c;
+}
+/* buton xem nhanh */
+.quick-view-btn:hover {
+  opacity: 0.7;
+}
+
+
+/* css các ảnh thể loại sản phẩm  */
+.produce-product .row {
+  flex-wrap: wrap;
+}
+.produce-product .row .card {
+  width: calc(50% - 20px);
+}
+
+.produce-product .row .card {
+  margin-right: 20px;
+}
+
+.produce-product .row .card:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.produce-product .row .card:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.produce-product .row .card:nth-child(3) {
+  margin-left: 0;
+}
+

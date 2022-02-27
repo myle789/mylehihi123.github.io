@@ -1,0 +1,108 @@
+/* Tìm kiếm cửa hàng*/
+.content h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 3rem;
+}
+
+/* Bọc thanh tìm tỉnh*/
+.wrapper-choose {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.wrapper-choose label {
+  width: 150px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper-choose select {
+  width: 435px;
+  border-radius: 0;
+  color: #000;
+  border-color: #000;
+  height: 35px;
+}
+
+/* Bọc bảng đăng kí thành viên*/
+.register-wrapper {
+  display: flex;
+  border-top: 1px solid #999;
+  padding-top: 3rem;
+  flex-direction: column;
+}
+
+/* Bọc form đăng kí*/
+.form-register {
+  margin: auto;
+  width: fit-content;
+}
+/* buton đăng kí */
+.form-register .quick-view-btn {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 3rem;
+}
+/* Icon trong buton */
+.form-register .quick-view-btn i {
+  margin-left: 10px;
+  margin-bottom: 1px;
+}
+.form-register .quick-view-btn:hover {
+  opacity: 0.7;
+}
+
+/* bọc cả Học tên, email, sđt */
+.form-control {
+  margin-top: 15px;
+}
+
+.form-control .input {
+  position: relative;
+}
+
+.form-control .input div {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  color: #555;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control label span {
+  color: red;
+}
+
+.form-control input[type="text"] {
+  width: 435px;
+  border-radius: 0;
+  color: #000;
+  border: 1px solid #000;
+  padding-left: 10px;
+  height: 35px;
+  outline: none;
+}
+/* Bọc thông tin liên hệ/liên hệ */
+.info {
+  display: flex;
+  padding-top: 3rem;
+  border-top: 1px solid #999;
+}
+
+.info div {
+  flex: 1;
+}

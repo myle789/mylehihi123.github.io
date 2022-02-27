@@ -1,0 +1,47 @@
+/*ghi đè banner   */
+.banner img {
+  border-radius: 10px;
+}
+/* bọc phần nội dung cho page */
+.content {
+  padding: 0 5rem;
+}
+/* tiêu đề nhỏ mờ ở COCOON - Mỹ phầm thuần cay ... */
+.subtitle {
+  color: #808080;
+  margin-bottom: 2rem;
+}
+/* tiêu đề của mỗi phần content */
+.content-section h2 {
+  font-size: 18pt;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+/* nôị dung miêu tả */
+.content-section p {
+  line-height: 1.5;
+  font-size: 14.5px;
+}
+/* css cho phần nguyên liệu */
+.material {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  padding: 0 15%;
+}
+
+.material div {
+  border-top: 1px solid #808080;
+  padding-top: 3rem;
+}
+
+.material div h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+.material div p {
+  line-height: 1.75;
+  font-size: 14.5px;
+}

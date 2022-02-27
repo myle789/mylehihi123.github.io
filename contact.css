@@ -1,0 +1,63 @@
+/* tiêu đề trên cung : LIÊN HỆ  */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+
+/* thẻ chưa các tính năng */
+.feature {
+  margin-bottom: 3rem;
+}
+
+/* mỗi một phần tính năng */
+.feature-section {
+  padding: 1.5rem 12%;
+  border-top: 1px solid rgb(187, 186, 186);
+  display: flex;
+}
+/* phần cuối cùng của tập hơp tính năng */
+.feature-section:last-child {
+  border-bottom: 1px solid rgb(187, 186, 186);
+}
+/* trái và phải của một phần tính năng */
+.feature-section-left,
+.feature-section-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+/* phần chữ */
+.feature-section-left span,
+.feature-section-right span {
+  font-size: 1.35rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* phần icon */
+.feature-section-left i,
+.feature-section-right i {
+  font-size: 1.55rem;
+}
+/* icon bên trái */
+.feature-section-left i {
+  margin-right: 15px;
+  color: #b5934a;
+}
+/* phần bên phải tính năng */
+.feature-section-right {
+  justify-content: flex-end;
+}
+/* chữ của tính năng */
+.feature-section-right span {
+  font-size: 1.25rem;
+}
+
+.feature-section-right span:hover,
+.feature-section-left span:hover{
+  opacity: 0.6;
+  color: #b8903a;
+}
